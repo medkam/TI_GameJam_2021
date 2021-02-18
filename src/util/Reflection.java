@@ -40,6 +40,9 @@ public class Reflection {
 		throws ClassNotFoundException {
 		java.util.List<Class> classes = new ArrayList();
 		if (!directory.exists()) {
+			System.out.println("Could not find the directory");
+			System.out.println("This most likely happened while looking for all possible Levels");
+			System.out.println("Most probably cause is use of spaces in the directory path to the current project");
 			return classes;
 		}
 		File[] files = directory.listFiles();

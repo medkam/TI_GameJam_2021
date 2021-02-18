@@ -21,7 +21,5 @@ public class main {
 		frame.setContentPane(new TowerDefence());
 		frame.setVisible(true);
 
-
-
 	}
 }
